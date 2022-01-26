@@ -1,0 +1,41 @@
+body{
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ height: 100vh;
+ display: flex;
+}
+.chakra{
+ animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+ 0%{
+  transform: rotate(0deg);
+ }
+ 100%{
+  transform: rotate(360deg);
+ }
+}
+img{
+ width: 30%;
+ 
+}
+.row{
+ display: flex;
+ flex-direction: column;
+ 
+}
+h1{
+ animation:tracking-in-contract-bck-top 1s cubic-bezier(.68,-.55,.265,1.55) both;
+text-transform:uppercase;
+text-decoration:underline;
+ 
+}
+@keyframes tracking-in-contract-bck-top{0%{letter-spacing:1em;transform:translateZ(400px) translateY(-300px);opacity:0}40%{opacity:.6}100%{transform:translateZ(0) translateY(0);opacity:1}};
+
+h2{
+ animation:focus-in-contract-bck 1s cubic-bezier(.25,.46,.45,.94) both;
+ 
+}
+@keyframes focus-in-contract-bck{0%{letter-spacing:1em;transform:translateZ(300px);filter:blur(12px);opacity:0}100%{transform:translateZ(12px);filter:blur(0);opacity:1}}
